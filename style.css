@@ -1,0 +1,87 @@
+body {
+  font-family: 'Source Code Pro', monospace;
+  background: linear-gradient(to bottom, hsl(210, 10%, 95%), hsl(40, 40%, 95%));
+  color: hsla(210, 40%, 36%, 0.9);
+  height: 100%;
+  text-align: center;
+  padding: 0 2em;
+}
+
+.card-white {
+  max-width: 700px;
+  background-color: white;
+  box-shadow: 0 0.6rem 2rem hsla(210, 0%, 6%, 0.15);
+  border-radius: 0.5rem;
+  padding: 3em 3em;
+  margin: 1em auto;
+}
+
+h1 {
+  font-size: 3rem;
+  color: hsla(210, 40%, 16%, 0.9);
+  font-weight: 800;
+  margin-bottom: 0;
+}
+
+h4 {
+  margin-top: 0.2em;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.margin-bottom-large{
+  margin-bottom: 4em;
+}
+
+.img-avatar {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin: 1em;
+  box-shadow: 0 0 1.5em 0.1em hsla(210, 0%, 6%, 0.15);
+  transition: box-shadow 260ms ease-in-out;
+}
+.img-avatar:hover {
+  box-shadow: 0 0 1.5em 0.1em hsla(210, 40%, 36%, 0.65);
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-inline > li {
+  display: inline-block;
+  margin: 2em auto;
+}
+
+.btn-blue {
+  text-decoration: none;
+  background-color: hsla(210, 50%, 50%, 0.99);
+  padding: 0.7em 1.4em;
+  border-radius: 0.5em;
+  color: aliceblue;
+  margin: 2em auto 0.5em auto;
+}
+
+.btn-blue:hover {
+  background-color: hsl(210, 20%, 26%);
+}
+
+.font-small {
+  font-size: 0.8em;
+}
+
+
+@media (max-width: 540px) {
+  .list-inline > li {
+    display: block;
+  }
+  h1 {
+    margin-top: 0;
+  }
+}
