@@ -1,3 +1,10 @@
+*,
+*::before,
+*:after {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: 'Source Code Pro', monospace;
   background: linear-gradient(to bottom, hsl(210, 10%, 95%), hsl(40, 40%, 95%));
@@ -8,12 +15,18 @@ body {
 }
 
 .card-white {
+  display: block;
   max-width: 700px;
   background-color: white;
-  box-shadow: 0 0.6rem 2rem hsla(210, 0%, 6%, 0.15);
+  box-shadow: 0 0.2rem 2rem hsla(210, 0%, 6%, 0.15);
   border-radius: 0.5rem;
   padding: 3em 3em;
-  margin: 1em auto;
+  margin: 2em auto;
+  transition: box-shadow 320ms ease-in-out;
+}
+
+.card-white:hover {
+  box-shadow: 0 0.2rem 2rem hsla(210, 50%, 16%, 0.35);
 }
 
 h1 {
@@ -23,8 +36,17 @@ h1 {
   margin-bottom: 0;
 }
 
+h2 {
+  font-size: 1.6em;
+  padding-bottom: 1em;
+}
+
 h4 {
   margin-top: 0.2em;
+}
+
+.text-align-left {
+  text-align: left;
 }
 
 .text-justify {
@@ -48,18 +70,41 @@ h4 {
   box-shadow: 0 0 1.5em 0.1em hsla(210, 40%, 36%, 0.65);
 }
 
-.list-inline {
+.list-style-none {
   list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
-.list-inline > li {
+.center {
   display: inline-block;
-  margin: 2em auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#dev-competences li{
+  margin-top: 1.5em;
+}
+
+#interests-list > ul {
+  padding: 0 2em;
+}
+
+#interests-list li{
+  margin: 1.5em 0;
+}
+
+.list-inline  {
+  display: inline-block;
+}
+
+.push-left {
+  padding-right: 3em;
+}
+.push-right {
+  padding-left: 3em;
 }
 
 .btn-blue {
+  display: inline-block;
   text-decoration: none;
   background-color: hsla(210, 50%, 50%, 0.99);
   padding: 0.7em 1.4em;
